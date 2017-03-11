@@ -14,7 +14,7 @@ namespace Fishermen_s_App
         {
             if (!IsPostBack)
             {
-
+                // EHYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY :)
                 Meme meme1 = new Meme();
                 meme1.Nome = "Meme1";
                 meme1.Percorso = "/Memes/meme1.jpg";
