@@ -1,0 +1,320 @@
+<html>
+	<head>
+	<meta charset="utf-8">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1844329625847561',
+      xfbml      : true,
+      version    : 'v2.8'
+    });
+    FB.AppEvents.logPageView();
+  };
+FB.ui({
+  method: 'share',
+  href: 'https://developers.facebook.com/docs/',
+}, function(response){});
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/it_IT/sdk.js#xfbml=1&version=v2.8&appId=1843848292562361";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div>
+
+<div id="mImageBox">
+<!--<img id='my_image' style="" src='Templates/Logo.jpg' alt='' width="auto" height="auto" /> -->
+</div>
+
+<script>
+$(document).ready(function () {
+  //  $("#downloadLink").click(function(){
+  //  alert(document.getElementById("c").toDataURL('image/jpeg', 1.0));
+  //  $("#my_image").attr("src",atob(document.getElementById("c").toDataURL('image/jpeg', 1.0)));
+  //  });
+  //	$("#my_image").click(function(){
+  //	 TheImage=document.getElementById("my_image");
+  //   u=TheImage.src;
+  //   // t=document.title;
+  //   alert(scope.atob(u));
+  //  t=TheImage.getAttribute('alt');
+  //  window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(u)+'&t='+encodeURIComponent(t),'sharer','toolbar=0,status=0,width=626,height=436');return false;
+    
+    
+     
+     });
+     });
+   
+</script>
+
+
+		<div class="container">
+		
+			<div class="row">
+				<div class="col-md-12">
+					<h1>AAPCUAR18 - THE GENERATOR</h1>
+				</div>
+			</div>
+			
+			<div id="Step1" class="container-fluid" >
+				<h2>Step 1: Scegli il layout e i template</h2>
+
+				<div id="ChooseLay" style="">
+					<h3>Scegli il layout</h3>
+					
+				</div>
+				
+				<div id="LoadTemp" style="">
+					<h3>Carica dal dispositivo</h3>
+					<input id="ifile" type="file" />
+				</div>
+				
+				<div id="ChooseTemp" style="">
+					<h3>Scegli tra i template già caricati</h3>
+				</div>
+			</div>
+			
+			
+			<div id="Step2" class="container-fluid" style="display: none;">
+				<h2>Step 2: Scrivi la tua vignetta</h2>
+							
+				<div class="col-md-4">
+				
+					<div id="boxTopLine" runat="server" style="margin:5%; padding:1%; border: black 1px solid" class="row">
+						<div class="row" >
+							<div class="col-md-8" >
+								<input id="topLine" class="mg-textbox-text form-control" placeholder="TOP LINE" />
+							</div>
+							<div class="col-md-4" >
+								<input id="dimTopLine" type="number" class="mg-textbox-size form-control" value="42" step="1" min="1" max="128">
+							</div>
+						</div>
+						<div class="row" >
+							<div class="col-md-6" style="text-align:center; " >
+								<p>Colore font:</p>
+								<input id="colTopLine" type="color" name="favcolor" value="#ffffff">
+							</div>
+							<div class="col-md-6" style="text-align:center; " >
+								<p>Colore contorno font:</p>
+								<input id="conTopLine" type="color" name="favcolor" value="#000000">								
+							</div>
+						</div>
+					</div>
+					
+					<div id="boxRig1" runat="server" style="margin:5%; padding:1%; display: none; border: black 1px solid" class="row">
+						<div class="row" >
+							<div class="col-md-8" >
+								<input id="testoRig1" class="mg-textbox-text form-control" placeholder="LINE 1" />
+							</div>
+							<div class="col-md-4" >
+								<input id="dimRig1" type="number" class="mg-textbox-size form-control" value="42" step="1" min="1" max="128">
+							</div>
+						</div>
+						<div class="row" >
+							<div class="col-md-6" style="text-align:center; " >
+								<p>Colore font:</p>
+								<input id="colRig1" type="color" name="favcolor" value="#ffffff">
+							</div>
+							<div class="col-md-6" style="text-align:center; " >
+								<p>Colore contorno font:</p>
+								<input id="conRig1" type="color" name="favcolor" value="#000000">								
+							</div>
+						</div>
+					</div>
+					
+					<div id="boxRig2" runat="server" style="margin:5%; padding:1%; display: none; border: black 1px solid" class="row">
+						<div class="row" >
+							<div class="col-md-8" >
+								<input id="testoRig2" class="mg-textbox-text form-control" placeholder="LINE 2" />
+							</div>
+							<div class="col-md-4" >
+								<input id="dimRig2" type="number" class="mg-textbox-size form-control" value="42" step="1" min="1" max="128">
+							</div>
+						</div>
+						<div class="row" >
+							<div class="col-md-6" style="text-align:center; " >
+								<p>Colore font:</p>
+								<input id="colRig2" type="color" name="favcolor" value="#ffffff">
+							</div>
+							<div class="col-md-6" style="text-align:center; " >
+								<p>Colore contorno font:</p>
+								<input id="conRig2" type="color" name="favcolor" value="#000000">								
+							</div>
+						</div>
+					</div>
+					
+					<div id="boxRig3" runat="server" style="margin:5%; padding:1%; display: none; border: black 1px solid" class="row">
+						<div class="row" >
+							<div class="col-md-8" >
+								<input id="testoRig3" class="mg-textbox-text form-control" placeholder="LINE 3" />
+							</div>
+							<div class="col-md-4" >
+								<input id="dimRig3" type="number" class="mg-textbox-size form-control" value="42" step="1" min="1" max="128">
+							</div>
+						</div>
+						<div class="row" >
+							<div class="col-md-6" style="text-align:center; " >
+								<p>Colore font:</p>
+								<input id="colRig3" type="color" name="favcolor" value="#ffffff">
+							</div>
+							<div class="col-md-6" style="text-align:center; " >
+								<p>Colore contorno font:</p>
+								<input id="conRig3" type="color" name="favcolor" value="#000000">								
+							</div>
+						</div>
+					</div>
+					
+					<div id="boxRig4" runat="server" style="margin:5%; padding:1%; display: none; border: black 1px solid" class="row">
+						<div class="row" >
+							<div class="col-md-8" >
+								<input id="testoRig4" class="mg-textbox-text form-control" placeholder="LINE 4" />
+							</div>
+							<div class="col-md-4" >
+								<input id="dimRig4" type="number" class="mg-textbox-size form-control" value="42" step="1" min="1" max="128">
+							</div>
+						</div>
+						<div class="row" >
+							<div class="col-md-6" style="text-align:center; " >
+								<p>Colore font:</p>
+								<input id="colRig4" type="color" name="favcolor" value="#ffffff">
+							</div>
+							<div class="col-md-6" style="text-align:center; " >
+								<p>Colore contorno font:</p>
+								<input id="conRig4" type="color" name="favcolor" value="#000000">								
+							</div>
+						</div>
+					</div>
+					
+					<div id="boxRig5" runat="server" style="margin:5%; padding:1%; display: none; border: black 1px solid" class="row">
+						<div class="row" >
+							<div class="col-md-8" >
+								<input id="testoRig5" class="mg-textbox-text form-control" placeholder="LINE 5" />
+							</div>
+							<div class="col-md-4" >
+								<input id="dimRig5" type="number" class="mg-textbox-size form-control" value="42" step="1" min="1" max="128">
+							</div>
+						</div>
+						<div class="row" >
+							<div class="col-md-6" style="text-align:center; " >
+								<p>Colore font:</p>
+								<input id="colRig5" type="color" name="favcolor" value="#ffffff">
+							</div>
+							<div class="col-md-6" style="text-align:center; " >
+								<p>Colore contorno font:</p>
+								<input id="conRig5" type="color" name="favcolor" value="#000000">								
+							</div>
+						</div>
+					</div>
+					
+					<div id="boxRig6" runat="server" style="margin:5%; padding:1%; display: none; border: black 1px solid" class="row">
+						<div class="row" >
+							<div class="col-md-8" >
+								<input id="testoRig6" class="mg-textbox-text form-control" placeholder="LINE 6" />
+							</div>
+							<div class="col-md-4" >
+								<input id="dimRig6" type="number" class="mg-textbox-size form-control" value="42" step="1" min="1" max="128">
+							</div>
+						</div>
+						<div class="row" >
+							<div class="col-md-6" style="text-align:center; " >
+								<p>Colore font:</p>
+								<input id="colRig6" type="color" name="favcolor" value="#ffffff">
+							</div>
+							<div class="col-md-6" style="text-align:center; " >
+								<p>Colore contorno font:</p>
+								<input id="conRig6" type="color" name="favcolor" value="#000000">								
+							</div>
+						</div>
+					</div>
+					
+					<div id="boxRig7" runat="server" style="margin:5%; padding:1%; display: none; border: black 1px solid" class="row">
+						<div class="row" >
+							<div class="col-md-8" >
+								<input id="testoRig7" class="mg-textbox-text form-control" placeholder="LINE 7" />
+							</div>
+							<div class="col-md-4" >
+								<input id="dimRig7" type="number" class="mg-textbox-size form-control" value="42" step="1" min="1" max="128">
+							</div>
+						</div>
+						<div class="row" >
+							<div class="col-md-6" style="text-align:center; " >
+								<p>Colore font:</p>
+								<input id="colRig7" type="color" name="favcolor" value="#ffffff">
+							</div>
+							<div class="col-md-6" style="text-align:center; " >
+								<p>Colore contorno font:</p>
+								<input id="conRig7" type="color" name="favcolor" value="#000000">								
+							</div>
+						</div>
+					</div>
+					
+					<div id="boxBottomLine" runat="server" style="margin:5%; padding:1%; border: black 1px solid" class="row">
+						<div class="row" >
+							<div class="col-md-8" >
+								<input id="bottomLine" class="mg-textbox-text form-control" placeholder="BOTTOM LINE" />
+							</div>
+							<div class="col-md-4" >
+								<input id="dimBottomLine" type="number" class="mg-textbox-size form-control" value="42" step="1" min="1" max="128">
+							</div>
+						</div>
+						<div class="row" >
+							<div class="col-md-6" style="text-align:center; " >
+								<p>Colore font:</p>
+								<input id="colBottomLine" type="color" name="favcolor" value="#ffffff">
+							</div>
+							<div class="col-md-6" style="text-align:center; " >
+								<p>Colore contorno font:</p>
+								<input id="conBottomLine" type="color" name="favcolor" value="#000000">								
+							</div>
+						</div>
+					</div>
+					
+					<div id="aggButton" runat="server" style="border: 2px solid black; margin: 5%; text-align: center;" class="row">				
+						<a style="text-decoration: none; color:black; text-align:center;" id="Aggiung">Aggiungi campo di testo</a>
+					</div>
+					<div id="downButton" runat="server" style="border: 2px solid black; margin: 5%; text-align: center;" class="row">
+						<a id="downloadLink" style="text-decoration: none;  color:black;" >Download</a>
+					</div>
+				</div>
+				
+				<div class="col-md-8" style="margin-top: 2%; width: 65%; text-align: center;" >
+					<div class="row">
+						<canvas id="c" style="width: 100%;">
+						</canvas>
+					</div>
+					<div class="row" style="text-align: center; margin-top:1%; font-size: 10pt;" >
+						<h3>Posiziona il Logo - Solo numeri!</h3>
+						<div class="col-md-2" style="margin-left: 7%; margin-right: 7%;" ><p> Asse X:</p><input id="CliX"  />
+						</div>
+						<div class="col-md-2" style="margin-left: 7%; margin-right: 7%;" ><p> Asse Y:</p><input id="CliY"  />
+						</div>
+						<div class="col-md-2" style="margin-left: 7%; margin-right: 7%;" ><p> Grandezza:</p><input id="CliDim"  />
+						</div>
+					</div>
+				</div>						
+			<br />
+			<br />
+		</div>
+		</div>
+		<script src="MemeGenScript.js" >
+		</script>
+	</body>
+</html>
